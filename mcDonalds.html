@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mc Donald's</title>
+</head>
+<body>
+
+    <!-- <select>
+        <option value="Dosa">Dosa</option>
+        <option value="Chowmeen">Chowmeen</option>
+        <option value="Ice-cream">Ice-cream</option>
+        <option value="Coldrink">Coldrink</option>
+        <option value="Badam-sake">Badam-sake</option>
+    </select> -->
+    <script>
+        var parent = document.querySelector('body');
+       
+        const h1 = document.createElement('h1');
+        h1.textContent = "MC Donald's Food Booking System"
+        h1.style.color = "white";
+        h1.style.backgroundColor = "black";
+        h1.style.textAlign = "center";
+        h1.style.border = "5px dashed grey";
+        h1.style.padding = "10px";
+        parent.append(h1);
+
+        var nav = document.createElement('div');
+        var div1 = document.createElement('div');
+        var div2 = document.createElement('div');
+        var div3 = document.createElement('div');
+        var div4 = document.createElement('div');
+        var div5 = document.createElement('div');
+        var div6 = document.createElement('div');
+
+        div1.textContent = "Our Menu"
+        div2.textContent = "Download App"
+        div3.textContent = "MyMcDonald's Rewards"
+        div4.textContent = "Exclusive Deals"
+        div5.textContent = "About Our Food"
+        div6.textContent = "Location";
+
+        div1.style.width = "15%";
+        div1.style.border = "5px dashed grey"
+        div1.style.margin = "10px"
+        div1.style.padding = "10px"
+        div1.style.color = "white"
+        div1.style.backgroundColor = "black"
+        div1.style.textAlign = "center"
+        //div1.style.position = "absolute"
+        //div1.style.textAlign = "center"
+        // div1.style.top = "50%"
+        // div1.style.left = "50%"
+        // div1.style.transform = "translate(-50%,-50%)";
+
+        //         position: absolute;
+        //   top: 50%;
+        //   left: 50%;
+        //   transform: translate(-50%, -50%);
+
+        div2.style.width = "15%";
+        div2.style.border = "5px dashed grey"
+        div2.style.margin = "10px"
+        div2.style.padding = "10px"
+        div2.style.color = "white"
+        div2.style.backgroundColor = "black"
+        div2.style.textAlign = "center"
+
+        div3.style.width = "15%";
+        div3.style.border = "5px dashed grey"
+        div3.style.margin = "10px"
+        div3.style.padding = "10px"
+        div3.style.color = "white"
+        div3.style.backgroundColor = "black"
+        div3.style.textAlign = "center"
+
+        div4.style.width = "15%";
+        div4.style.border = "5px dashed grey"
+        div4.style.margin = "10px"
+        div4.style.padding = "10px"
+        div4.style.color = "white"
+        div4.style.backgroundColor = "black"
+        div4.style.textAlign = "center"
+
+        div5.style.width = "15%";
+        div5.style.border = "5px dashed grey"
+        div5.style.margin = "10px"
+        div5.style.padding = "10px"
+        div5.style.color = "white"
+        div5.style.backgroundColor = "black"
+        div5.style.textAlign = "center"
+
+        div6.style.width = "15%";
+        div6.style.border = "5px dashed grey"
+        div6.style.margin = "10px"
+        div6.style.padding = "10px"
+        div6.style.color = "white"
+        div6.style.backgroundColor = "black"
+        div6.style.textAlign = "center"
+
+
+
+
+        nav.append(div1,div2,div3,div4,div5,div6);
+        nav.style.display = "flex";
+        nav.style.fontSize = "15px";
+
+        // nav.style.margin = "3%";
+        // nav.style.padding = "3%";
+
+        parent.append(nav);
+
+        const img = document.createElement('img');
+        img.src = 'https://media.istockphoto.com/photos/mcdonalds-big-mac-burger-meal-picture-id458596657?s=612x612'
+        img.style.width = "50%"
+        img.style.marginLeft = "25%"
+        img.style.marginRight = "25%"
+        parent.append(img);
+
+
+        const select = document.createElement('select');
+        var option1 = document.createElement('option');
+        option1.textContent = "Dosa";
+        var option2 = document.createElement('option');
+        option2.textContent = "Burger";
+        var option3 = document.createElement('option');
+        option3.textContent = "Ice-Cream";
+        var option4 = document.createElement('option');
+        option4.textContent = "Badam-sake";
+        var option5 = document.createElement('option');
+        option5.textContent = "Pizza";
+        var option6 = document.createElement('option');
+        option6.textContent = "Chowmeen";
+
+        option1.value = "1";
+        option2.value = "2";
+        option3.value = "3";
+        option4.value = "4";
+        option5.value = "5";
+        option6.value = "6";
+        select.append(option1,option2,option3,option4,option5,option6)
+        //select.style.color = "white";
+        select.style.backgroundColor = "wheat";
+        select.style.width = "25%";
+        select.style.height = "50px";
+        select.style.margin = "10px";
+        select.style.marginLeft = "30%";
+        select.style.border = "5px dotted grey";
+        select.style.borderRadius = "15px";
+        select.style.marginLeft = "25%";
+        select.style.textAlign = "center";
+        select.style.fontSize = "25px";
+        //select.style.width = "60%";
+        parent.append(select)
+
+    //      (this)=>{
+    //         select.addEventListener('onchange',(e)=>{
+    //         //btnFunction(this);
+    //     })
+    // }
+        const btn = document.createElement('button');
+        btn.textContent = "Order Food";
+        btn.style.width = "14%"
+        btn.style.height = "50px"
+        //btn.style.marginLeft = "27.5%"
+        btn.style.fontSize = "30px"
+        btn.style.color = "white"
+        btn.style.backgroundColor = "grey"
+        btn.style.border = "2px solid blue"
+        btn.style.borderRadius = "10px"
+        parent.append(btn);
+
+        // btn.addEventListener("click",()=>{
+        //     const search = option1.textContent;
+        //     console.log(option1.value);
+        // })
+
+        // select.addEventListener('change',function(e){
+        //     var elem = (e.target[(e.target).selectedIndex].textContent);
+        // })
+
+        // function btnFunction(elem){
+        //     var search = "";
+        //     search = elem;
+        //     console.log(search)
+        //     if(elem){
+        //         btn.addEventListener('click',function(){
+        //             if(search !== ''){
+        //                 createOrder(search);
+        //             }
+        //             search = "";
+        //         })
+        //     }
+        // }
+
+
+        select.addEventListener("change",function(e){
+            var searchItem = (e.target[(e.target).selectedIndex].textContent);
+            btnFunction(searchItem);
+        });
+
+        function btnFunction(elem){
+            var search = "";
+            search = elem;
+            if(elem){
+                btn.addEventListener("click", function(){
+                    if(search !== "")
+                    {  
+                        alert("Your order will be placed within 5 seconds")
+                         return new Promise(function(resolve,reject){
+                            if(search!==""){
+                                setTimeout(()=>{
+                                    resolve(createOrder(search));
+                                },5000);
+                            }
+                        })
+                    }search = "";
+                })
+            }
+        }
+
+        var container = document.createElement('div');
+        function createOrder(search){
+
+            let orderDetails = 46567878;
+            container.innerHTML = "";
+
+            if(search === "Dosa"){
+
+                const div1 = document.createElement('div');
+                const div2 = document.createElement('div');
+                const img = document.createElement("img");
+                img.src = "https://static.toiimg.com/thumb/63841432.cms?width=1200&height=900";
+                img.style.height = "300px";
+                img.style.width = "300px";
+                img.style.margin = "10px";
+                const id = document.createElement("h3");
+                id.textContent = "Ordered ID: "+orderDetails++;
+
+
+                const name = document.createElement("h3");
+                name.textContent = "Ordered Item: Dosa";
+
+                const price = document.createElement('h3');
+                price.textContent = "Price: $05"
+
+                // const message = document.createElement('h3');
+                // message.textContent = "Thank you for ordering"
+                alert("Your order is done, Check details")
+                div1.append(img);
+                div2.append(id);
+                div2.append(name);
+                div2.append(price);
+                //div2.append(message);
+                div2.style.fontSize = "23px";
+                div2.style.marginTop = "50px";
+
+                container.append(div1,div2);
+                container.style.display = "flex";
+                container.style.marginLeft = "20%";
+                container.style.width = "55%";
+                container.style.backgroundColor = "black";
+                container.style.color = "white";
+            }
+            parent.append(container);
+
+            if(search === "Burger"){
+
+                const div1 = document.createElement('div');
+                const div2 = document.createElement('div');
+                const img = document.createElement("img");
+                img.src = "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyJTIwcG5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80";
+                img.style.height = "300px";
+                img.style.width = "300px";
+                img.style.margin = "10px";
+                const id = document.createElement("h3");
+                id.textContent = "Ordered ID: "+orderDetails++;
+
+
+                const name = document.createElement("h3");
+                name.textContent = "Ordered Item: Burger";
+
+                const price = document.createElement('h3');
+                price.textContent = "Price: $55"
+
+                // const message = document.createElement('h3');
+                // message.textContent = "Thank you for ordering"
+                alert("Your order is done, Check details")
+                div1.append(img);
+                div2.append(id);
+                div2.append(name);
+                div2.append(price);
+                //div2.append(message);
+                div2.style.fontSize = "23px";
+                div2.style.marginTop = "50px";
+
+                container.append(div1,div2);
+                container.style.display = "flex";
+                container.style.marginLeft = "20%";
+                container.style.width = "55%";
+                container.style.backgroundColor = "black";
+                container.style.color = "white";
+            }
+            parent.append(container);
+
+            
+            if(search === "Ice-Cream"){
+
+                const div1 = document.createElement('div');
+                const div2 = document.createElement('div');
+                const img = document.createElement("img");
+                img.src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mcdonalds-popcorn-caramel-ice-cream-cone-1579804983.jpg";
+                img.style.height = "300px";
+                img.style.width = "300px";
+                img.style.margin = "10px";
+                const id = document.createElement("h3");
+                id.textContent = "Ordered ID: "+orderDetails++;
+
+
+                const name = document.createElement("h3");
+                name.textContent = "Ordered Item: Ice Cream";
+
+                const price = document.createElement('h3');
+                price.textContent = "Price: $10"
+
+                // const message = document.createElement('h3');
+                // message.textContent = "Thank you for ordering"
+                alert("Your order is done, Check details")
+                div1.append(img);
+                div2.append(id);
+                div2.append(name);
+                div2.append(price);
+                //div2.append(message);
+                div2.style.fontSize = "23px";
+                div2.style.marginTop = "50px";
+
+                container.append(div1,div2);
+                container.style.display = "flex";
+                container.style.marginLeft = "20%";
+                container.style.width = "55%";
+                container.style.backgroundColor = "black";
+                container.style.color = "white";
+            }
+            parent.append(container);
+
+            if(search === "Badam-sake"){
+
+                const div1 = document.createElement('div');
+                const div2 = document.createElement('div');
+                const img = document.createElement("img");
+                img.src = "https://i1.wp.com/www.indianrecipeinfo.com/wp-content/uploads/2011/03/Badam-Milk-Shake.jpg?fit=547%2C677&ssl=1";
+                img.style.height = "300px";
+                img.style.width = "300px";
+                img.style.margin = "10px";
+                const id = document.createElement("h3");
+                id.textContent = "Ordered ID: "+orderDetails++;
+
+
+                const name = document.createElement("h3");
+                name.textContent = "Ordered Item: Badam-Shake";
+
+                const price = document.createElement('h3');
+                price.textContent = "Price: $15"
+
+                // const message = document.createElement('h3');
+                // message.textContent = "Thank you for ordering"
+                alert("Your order is done, Check details")
+
+                div1.append(img);
+                div2.append(id);
+                div2.append(name);
+                div2.append(price);
+                //div2.append(message);
+                div2.style.fontSize = "23px";
+                div2.style.marginTop = "50px";
+
+                container.append(div1,div2);
+                container.style.display = "flex";
+                container.style.marginLeft = "20%";
+                container.style.width = "55%";
+                container.style.backgroundColor = "black";
+                container.style.color = "white";
+            }
+            parent.append(container);
+
+            if(search === "Pizza"){
+
+                const div1 = document.createElement('div');
+                const div2 = document.createElement('div');
+                const img = document.createElement("img");
+                img.src = "https://pyxis.nymag.com/v1/imgs/2d4/929/6a40718d54b1476f06d411547900aacb80-21-mcdonalds-pizza.rsquare.w700.jpg";
+                img.style.height = "300px";
+                img.style.width = "300px";
+                img.style.margin = "10px";
+                const id = document.createElement("h3");
+                id.textContent = "Ordered ID: "+orderDetails++;
+
+
+                const name = document.createElement("h3");
+                name.textContent = "Ordered Item: Pizza";
+
+                const price = document.createElement('h3');
+                price.textContent = "Price: $55"
+
+                // const message = document.createElement('h3');
+                // message.textContent = "Thank you for ordering"
+                alert("Your order is done, Check details")
+                div1.append(img);
+                div2.append(id);
+                div2.append(name);
+                div2.append(price);
+                //div2.append(message);
+                div2.style.fontSize = "23px";
+                div2.style.marginTop = "50px";
+
+                container.append(div1,div2);
+                container.style.display = "flex";
+                container.style.marginLeft = "20%";
+                container.style.width = "55%";
+                container.style.backgroundColor = "black";
+                container.style.color = "white";
+            }
+            parent.append(container);
+
+            if(search === "Chowmeen"){
+
+                const div1 = document.createElement('div');
+                const div2 = document.createElement('div');
+                const img = document.createElement("img");
+                img.src = "https://i.ytimg.com/vi/jDTU279KG1w/maxresdefault.jpg";
+                img.style.height = "300px";
+                img.style.width = "300px";
+                img.style.margin = "10px";
+                const id = document.createElement("h3");
+                id.textContent = "Ordered ID: "+orderDetails++;
+
+
+                const name = document.createElement("h3");
+                name.textContent = "Ordered Item: Chowmeen";
+
+                const price = document.createElement('h3');
+                price.textContent = "Price: $55"
+
+                // const message = document.createElement('h3');
+                // message.textContent = "Thank you for ordering"
+                alert("Thanku for ordering")
+
+                div1.append(img);
+                div2.append(id);
+                div2.append(name);
+                div2.append(price);
+                //div2.append(message);
+                div2.style.fontSize = "23px";
+                div2.style.marginTop = "50px";
+
+                container.append(div1,div2);
+                container.style.display = "flex";
+                container.style.marginLeft = "20%";
+                container.style.width = "55%";
+                container.style.backgroundColor = "black";
+                container.style.color = "white";
+            }
+            parent.append(container);
+
+
+
+        }
+        parent.style.backgroundColor = "cornsilk"
+    </script>
+</body>
+</html>
